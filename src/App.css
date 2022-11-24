@@ -19,6 +19,7 @@ body,
 	height: 100%;
 	margin-top: 2rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -115,9 +116,11 @@ body,
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	margin-top: 1rem;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: hsl(158, 36%, 37%);
+	font-weight: bold;
 }
 
 @media screen and (max-width: 515px) {
