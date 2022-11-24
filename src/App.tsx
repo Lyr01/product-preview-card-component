@@ -2,6 +2,7 @@ import "./App.css";
 
 import CartIcon from "./images/icon-cart.svg";
 import DesktopProductImg from "./images/image-product-desktop.jpg";
+import MobileProductImg from "./images/image-product-mobile.jpg";
 
 function App() {
 	return (
@@ -9,7 +10,16 @@ function App() {
 			<div className="App">
 				<div className="card">
 					<div className="card-img">
-						<img src={DesktopProductImg} alt="product image" className="img" />
+						<img
+							src={DesktopProductImg}
+							alt="desktop product image"
+							className="desktop-product-img"
+						/>
+						<img
+							src={MobileProductImg}
+							alt="mobile product image"
+							className="mobile-product-img"
+						/>
 					</div>
 					<div className="card-content">
 						<small className="category">Perfume</small>

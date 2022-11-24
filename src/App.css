@@ -11,12 +11,13 @@ html,
 body,
 #root {
 	height: 100%;
+	background-color: hsl(30, 38%, 92%);
 	font-family: "Overpass", sans-serif;
 }
 
 .App {
 	height: 100%;
-	background-color: hsl(30, 38%, 92%);
+	margin-top: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,10 +36,15 @@ body,
 	width: 50%;
 }
 
-.img {
+.desktop-product-img {
 	width: 100%;
+	height: 100%;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
+}
+
+.mobile-product-img {
+	display: none;
 }
 
 .card-content {
@@ -97,6 +103,11 @@ body,
 	font-family: "Montserrat", sans-serif;
 }
 
+.add-to-cart:hover {
+	cursor: pointer;
+	background-color: hsl(158, 35%, 27%);
+}
+
 .cart-icon {
 	margin: 0px 15px;
 }
@@ -107,4 +118,39 @@ body,
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 515px) {
+	.App {
+		height: auto;
+	}
+
+	.card {
+		width: 90%;
+		height: fit-content;
+		flex-wrap: wrap;
+		margin-bottom: 2rem;
+	}
+
+	.card-img {
+		width: 100%;
+		height: 40%;
+	}
+
+	.card-content {
+		width: 100%;
+		height: 60%;
+	}
+
+	.desktop-product-img {
+		display: none;
+	}
+
+	.mobile-product-img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
 }
